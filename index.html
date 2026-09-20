@@ -1,0 +1,1671 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+
+    <title>Ligaya @ 80 | 80th Birthday Celebration</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+
+    <style>
+        :root {
+            --ivory: #fbf7f0;
+            --pearl: #fffdf9;
+            --beige: #e9ddcd;
+            --blush: #efd9d3;
+            --rose: #a96f70;
+            --wine: #633e40;
+            --cocoa: #3f302a;
+            --gold: #b88a47;
+            --soft-gold: #d9ba7b;
+            --line: rgba(184, 138, 71, .42);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            color: var(--cocoa);
+            font-family: "Source Sans 3", sans-serif;
+            overflow-x: hidden;
+            background: var(--ivory);
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .font-display {
+            font-family: "Playfair Display", serif;
+        }
+
+        .font-script {
+            font-family: "Allura", cursive;
+        }
+
+        .site-shell {
+            width: 100%;
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            background:
+                radial-gradient(
+                    circle at 7% 3%,
+                    rgba(239, 217, 211, .85),
+                    transparent 20rem
+                ),
+                radial-gradient(
+                    circle at 97% 12%,
+                    rgba(217, 186, 123, .20),
+                    transparent 19rem
+                ),
+                var(--ivory);
+        }
+
+        .paper-grain {
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            opacity: .20;
+            pointer-events: none;
+            background-image:
+                radial-gradient(
+                    rgba(87, 58, 45, .18) .55px,
+                    transparent .55px
+                );
+            background-size: 8px 8px;
+            mask-image: linear-gradient(
+                to bottom,
+                #000,
+                transparent 98%
+            );
+        }
+
+        .section-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 5.5rem 1.25rem;
+        }
+
+        .eyebrow {
+            color: var(--rose);
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .20em;
+            text-transform: uppercase;
+        }
+
+        .gold-rule {
+            width: 5.5rem;
+            height: 1px;
+            margin: 1.25rem 0;
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    var(--gold),
+                    transparent
+                );
+        }
+
+        .floral {
+            position: absolute;
+            color: var(--rose);
+            opacity: .24;
+            pointer-events: none;
+            filter:
+                drop-shadow(
+                    0 8px 12px rgba(99, 62, 64, .10)
+                );
+            animation: floral-drift 8s ease-in-out infinite;
+        }
+
+        .floral-reverse {
+            animation-delay: -4s;
+            animation-direction: reverse;
+        }
+
+        @keyframes floral-drift {
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-11px) rotate(2deg);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: 200% center;
+            }
+
+            100% {
+                background-position: -200% center;
+            }
+        }
+
+        @keyframes rise-in {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .reveal {
+            animation: rise-in .8s ease both;
+        }
+
+        .shimmer-text {
+            background:
+                linear-gradient(
+                    100deg,
+                    #99703a 15%,
+                    #e6c985 42%,
+                    #b68440 58%,
+                    #8f6734 85%
+                );
+            background-size: 200% auto;
+            animation: shimmer 7s linear infinite;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .photo-mat {
+            position: relative;
+            background: #fffdf9;
+            border: 1px solid rgba(184, 138, 71, .50);
+            box-shadow: 0 18px 46px rgba(80, 55, 42, .16);
+            padding: .65rem;
+        }
+
+        .photo-mat::before {
+            content: "";
+            position: absolute;
+            inset: .28rem;
+            border: 1px solid rgba(184, 138, 71, .24);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .photo-mat img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            filter:
+                sepia(12%)
+                saturate(82%)
+                contrast(95%);
+        }
+
+        .photo-caption {
+            position: absolute;
+            z-index: 2;
+            left: 1rem;
+            right: 1rem;
+            bottom: 1rem;
+            padding: .45rem .75rem;
+            color: #fffaf4;
+            background: rgba(63, 48, 42, .65);
+            backdrop-filter: blur(4px);
+            font-size: .68rem;
+            font-weight: 600;
+            letter-spacing: .14em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .gold-button,
+        .outline-button {
+            display: inline-flex;
+            min-height: 3.25rem;
+            align-items: center;
+            justify-content: center;
+            gap: .6rem;
+            padding: .85rem 1.25rem;
+            font-family: "Source Sans 3", sans-serif;
+            font-size: .77rem;
+            font-weight: 700;
+            letter-spacing: .15em;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition:
+                transform .25s ease,
+                box-shadow .25s ease,
+                background-position .4s ease;
+            cursor: pointer;
+        }
+
+        .gold-button {
+            border: 1px solid #a87939;
+            color: #fffaf1;
+            background:
+                linear-gradient(
+                    115deg,
+                    #9e7136,
+                    #d5b36e 48%,
+                    #a57435
+                );
+            background-size: 170% 100%;
+            box-shadow: 0 10px 20px rgba(130, 88, 35, .20);
+        }
+
+        .gold-button:hover {
+            transform: translateY(-2px);
+            background-position: 100% 0;
+            box-shadow: 0 14px 28px rgba(130, 88, 35, .28);
+        }
+
+        .outline-button {
+            border: 1px solid var(--gold);
+            color: var(--wine);
+            background: rgba(255, 253, 249, .7);
+        }
+
+        .outline-button:hover {
+            transform: translateY(-2px);
+            background: var(--blush);
+        }
+
+        .gold-button:focus-visible,
+        .nav-link:focus-visible,
+        .outline-button:focus-visible {
+            outline: 3px solid var(--wine);
+            outline-offset: 4px;
+        }
+
+        .nav-link {
+            color: var(--cocoa);
+            font-size: .66rem;
+            font-weight: 700;
+            letter-spacing: .12em;
+            text-decoration: none;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .section-divider {
+            width: min(88%, 52rem);
+            height: 1px;
+            margin: 0 auto;
+            background:
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    var(--line),
+                    transparent
+                );
+        }
+
+        .detail-card {
+            border: 1px solid rgba(184, 138, 71, .45);
+            background: rgba(255, 253, 249, .70);
+            box-shadow: 0 16px 34px rgba(95, 65, 50, .07);
+        }
+
+        .timeline {
+            position: relative;
+            margin-top: 2.4rem;
+            padding-left: 1.75rem;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: .35rem;
+            bottom: .35rem;
+            left: .35rem;
+            width: 1px;
+            background:
+                linear-gradient(
+                    to bottom,
+                    transparent,
+                    var(--gold) 4%,
+                    var(--gold) 95%,
+                    transparent
+                );
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 0 0 2rem 1.65rem;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            top: .28rem;
+            left: 0;
+            width: .72rem;
+            height: .72rem;
+            border: 2px solid #faf5eb;
+            border-radius: 999px;
+            background: var(--gold);
+            box-shadow: 0 0 0 1px var(--gold);
+        }
+
+        .timeline-card {
+            border-left: 1px solid rgba(184, 138, 71, .38);
+            padding: .15rem 0 .2rem 1.1rem;
+        }
+
+        /* PROGRAM PARTICIPANTS */
+
+        .program-participants {
+            margin-top: 1rem;
+            padding: 1rem 1.1rem;
+            background: rgba(255, 253, 249, .65);
+            border: 1px solid rgba(184, 138, 71, .22);
+        }
+
+        .program-participants-title {
+            margin: 0 0 .75rem;
+            color: var(--rose);
+            font-family: "Playfair Display", serif;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .program-names {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: .4rem 1.5rem;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .program-names li {
+            color: #634f48;
+            font-size: .95rem;
+            line-height: 1.5;
+        }
+
+        .program-names li span {
+            color: var(--gold);
+            font-family: "Playfair Display", serif;
+            font-weight: 600;
+            margin-right: .25rem;
+        }
+
+        /* MILESTONE SECTION */
+
+        .milestone-section {
+            position: relative;
+            overflow: hidden;
+            padding: 120px 7%;
+            background:
+                radial-gradient(
+                    circle at 15% 50%,
+                    rgba(214, 167, 150, .10),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 90% 15%,
+                    rgba(207, 173, 112, .08),
+                    transparent 25%
+                ),
+                #fbf8f2;
+        }
+
+        .milestone-container {
+            position: relative;
+            z-index: 2;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 90px;
+        }
+
+        .milestone-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 35px;
+        }
+
+        .quote-card {
+            position: relative;
+            width: min(100%, 600px);
+            min-height: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 45px;
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(255, 255, 255, .85),
+                    rgba(250, 246, 239, .95)
+                );
+            border: 1px solid #d7b77a;
+            box-shadow:
+                0 18px 40px rgba(80, 57, 44, .10),
+                0 4px 12px rgba(80, 57, 44, .05);
+            transform: rotate(-2deg);
+        }
+
+        .quote-card::before {
+            content: "";
+            position: absolute;
+            inset: 8px;
+            border: 1px solid rgba(207, 168, 104, .35);
+            pointer-events: none;
+        }
+
+        .quote-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .quote-text {
+            color: #a86f6d;
+            font-family: "Allura", cursive;
+            font-size: clamp(42px, 4vw, 62px);
+            line-height: 1.1;
+        }
+
+        .quote-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 25px;
+        }
+
+        .quote-divider span {
+            display: block;
+            width: 75px;
+            height: 1px;
+            background: #c99b4d;
+        }
+
+        .quote-divider b {
+            color: #c99b4d;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .milestone-content {
+            max-width: 610px;
+        }
+
+        .milestone-eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            color: #a96f6e;
+            font-family: "Source Sans 3", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .milestone-eyebrow span {
+            display: block;
+            width: 55px;
+            height: 1px;
+            background: #c99b4d;
+        }
+
+        .milestone-title h2 {
+            margin: 0;
+            color: #5a3436;
+            font-family: "Playfair Display", serif;
+            font-size: clamp(48px, 5vw, 72px);
+            font-weight: 600;
+            line-height: .98;
+            letter-spacing: -1.5px;
+        }
+
+        .milestone-description {
+            max-width: 600px;
+            margin: 35px 0 0;
+            color: #634f48;
+            font-family: "Source Sans 3", sans-serif;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        .milestone-signature {
+            margin-top: 35px;
+            color: #a96f6e;
+            font-family: "Allura", cursive;
+            font-size: clamp(32px, 4vw, 48px);
+            line-height: 1;
+        }
+
+        .signature-line {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 210px;
+            margin-top: 15px;
+        }
+
+        .signature-line span {
+            flex: 1;
+            height: 1px;
+            background: #c99b4d;
+        }
+
+        .signature-line b {
+            color: #c99b4d;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .milestone-floral {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            pointer-events: none;
+            opacity: .75;
+        }
+
+        .milestone-floral-left {
+            left: -35px;
+            bottom: 25px;
+        }
+
+        .milestone-floral-right {
+            right: -30px;
+            top: -35px;
+        }
+
+        .leaf {
+            position: absolute;
+            width: 75px;
+            height: 30px;
+            border: 1.5px solid #bd8c4c;
+            border-radius: 100% 0 100% 0;
+            transform-origin: bottom left;
+        }
+
+        .leaf::after {
+            content: "";
+            position: absolute;
+            width: 65px;
+            height: 1px;
+            top: 50%;
+            left: 4px;
+            background: #bd8c4c;
+            transform: rotate(-20deg);
+        }
+
+        .leaf-1 {
+            left: 20px;
+            bottom: 50px;
+            transform: rotate(-30deg);
+        }
+
+        .leaf-2 {
+            left: 60px;
+            bottom: 95px;
+            transform: rotate(15deg) scale(.8);
+        }
+
+        .leaf-3 {
+            left: 5px;
+            bottom: 115px;
+            transform: rotate(-65deg) scale(.7);
+        }
+
+        .leaf-4 {
+            right: 30px;
+            top: 65px;
+            transform: rotate(145deg);
+        }
+
+        .leaf-5 {
+            right: 70px;
+            top: 25px;
+            transform: rotate(110deg) scale(.8);
+        }
+
+        .leaf-6 {
+            right: 5px;
+            top: 105px;
+            transform: rotate(175deg) scale(.7);
+        }
+
+        .flower {
+            position: absolute;
+            color: #c99473;
+            font-family: serif;
+            font-size: 75px;
+            line-height: 1;
+        }
+
+        .flower-1 {
+            left: 70px;
+            bottom: 5px;
+        }
+
+        .flower-2 {
+            right: 65px;
+            top: -10px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            transition:
+                transform .35s ease,
+                box-shadow .35s ease;
+        }
+
+        .rsvp-card {
+            overflow: hidden;
+            border: 1px solid rgba(184, 138, 71, .52);
+            background:
+                radial-gradient(
+                    circle at 100% 0%,
+                    rgba(217, 186, 123, .28),
+                    transparent 18rem
+                ),
+                linear-gradient(
+                    135deg,
+                    rgba(255, 253, 249, .96),
+                    rgba(244, 231, 220, .78)
+                );
+            box-shadow: 0 20px 50px rgba(80, 55, 42, .14);
+        }
+
+        .footer-florals {
+            width: min(31rem, 92vw);
+            margin: 2.5rem auto 0;
+            color: var(--rose);
+            opacity: .7;
+        }
+
+        /* CHAMPAGNE COLORS */
+
+        .champagne-colors {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .75rem;
+            margin-top: 1rem;
+        }
+
+        .champagne-color {
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+            border: 1px solid rgba(120, 91, 62, .35);
+            box-shadow:
+                0 4px 10px rgba(80, 55, 42, .14),
+                inset 0 0 0 2px rgba(255, 255, 255, .35);
+        }
+
+        .champagne-light {
+            background: #F7E7CE;
+        }
+
+        .champagne-classic {
+            background: #E8D3B5;
+        }
+
+        .champagne-deep {
+            background: #D6B98C;
+        }
+
+        @media (min-width: 900px) {
+            #cover .section-wrap > div {
+                grid-template-columns: .9fr 1.1fr !important;
+            }
+        }
+
+        @media (max-width: 899px) {
+            #welcome .section-wrap > div,
+            #details .detail-card > div:first-child {
+                grid-template-columns: 1fr !important;
+            }
+
+            .milestone-container {
+                grid-template-columns: 1fr;
+                gap: 65px;
+            }
+
+            .milestone-content {
+                max-width: 700px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .milestone-eyebrow {
+                justify-content: center;
+            }
+
+            .milestone-description {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .signature-line {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .milestone-visual {
+                order: 1;
+            }
+
+            .milestone-content {
+                order: 2;
+            }
+        }
+
+        @media (min-width: 640px) {
+            .section-wrap {
+                padding: 7rem 2rem;
+            }
+
+            .timeline {
+                padding-left: 2.25rem;
+            }
+
+            .timeline-item {
+                padding-left: 2.1rem;
+            }
+        }
+
+        @media (max-width: 639px) {
+            .mobile-stack {
+                flex-direction: column;
+            }
+
+            .mobile-stack a {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .milestone-section {
+                padding: 75px 20px;
+            }
+
+            .milestone-container {
+                gap: 50px;
+            }
+
+            .milestone-visual {
+                padding: 15px;
+            }
+
+            .quote-card {
+                min-height: 210px;
+                padding: 35px 25px;
+            }
+
+            .quote-text {
+                font-size: 42px;
+            }
+
+            .milestone-eyebrow {
+                gap: 8px;
+                font-size: 11px;
+                letter-spacing: 2.5px;
+            }
+
+            .milestone-eyebrow span {
+                width: 30px;
+            }
+
+            .milestone-title h2 {
+                font-size: 46px;
+            }
+
+            .milestone-description {
+                font-size: 17px;
+                line-height: 1.7;
+            }
+
+            .milestone-signature {
+                font-size: 40px;
+            }
+
+            .milestone-floral {
+                opacity: .35;
+                transform: scale(.7);
+            }
+
+            .program-participants {
+                padding: .9rem;
+            }
+
+            .program-names {
+                grid-template-columns: 1fr;
+                gap: .3rem;
+            }
+
+            .program-names li {
+                font-size: .9rem;
+            }
+
+            .champagne-color {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: .01ms !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="site-shell">
+
+    <div class="paper-grain"></div>
+
+    <!-- NAVIGATION -->
+    <header style="position:sticky;top:0;z-index:40;border-bottom:1px solid #b88a4735;background:#fffdf9e8;backdrop-filter:blur(12px)">
+        <nav aria-label="Invitation sections" style="max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;overflow-x:auto;padding:.8rem 1rem">
+
+            <a href="#cover" class="nav-link">LIGAYA @ 80</a>
+
+            <div style="display:flex;align-items:center;gap:1.25rem">
+                <a href="#details" class="nav-link">Details</a>
+                <a href="#program" class="nav-link">Program</a>
+                <a href="#dress-code" class="nav-link">Dress Code</a>
+                <a href="#rsvp" class="nav-link">RSVP</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- COVER -->
+        <section id="cover" aria-label="Cover invitation" style="position:relative;overflow:hidden">
+
+            <svg class="floral" style="left:-5.5rem;top:4rem;width:18rem;height:18rem" viewBox="0 0 220 220" fill="none" aria-hidden="true">
+                <path d="M58 216c12-63 55-78 72-145M75 151c-31-10-38-39-24-55 18 17 28 35 24 55Zm21-38c22-28 50-19 56 4-26 8-43 13-56-4Zm25-44c-8-31 13-48 34-47 0 26-10 40-34 47Z" stroke="currentColor" stroke-width="1.35"/>
+                <circle cx="152" cy="25" r="18" stroke="currentColor" stroke-width="1.35"/>
+                <path d="M151 7c7 10 8 18 1 35M134 27c13-2 21 2 35 13M133 13c4 14 10 20 26 29" stroke="currentColor" stroke-width="1.15"/>
+            </svg>
+
+            <svg class="floral floral-reverse" style="right:-4rem;top:10rem;width:16rem;height:16rem" viewBox="0 0 220 220" fill="none" aria-hidden="true">
+                <path d="M166 216c-10-77-54-98-71-153M145 148c28-15 32-45 15-59-15 20-22 39-15 59Zm-22-40c-22-29-51-20-57 4 25 9 44 12 57-4ZM98 65c8-31-13-48-34-47 0 26 10 40 34 47Z" stroke="currentColor" stroke-width="1.35"/>
+                <circle cx="65" cy="24" r="18" stroke="currentColor" stroke-width="1.35"/>
+                <path d="M65 6c-8 10-9 18-2 35M82 26c-13-1-21 4-35 14M83 12C78 26 72 32 56 41" stroke="currentColor" stroke-width="1.15"/>
+            </svg>
+
+            <div class="section-wrap" style="display:flex;align-items:center;min-height:calc(100vh - 3.6rem)">
+
+                <div style="display:grid;width:100%;align-items:center;gap:2.5rem;grid-template-columns:1fr">
+
+                    <div style="text-align:center">
+
+                        <div class="gold-rule" style="margin-left:auto;margin-right:auto"></div>
+
+                        <h1 class="font-display shimmer-text reveal" style="font-size:clamp(3rem,7vw,5rem);line-height:.94;margin:.5rem 0;animation-delay:.1s">
+                            LIGAYA @ 80
+                        </h1>
+
+                        <p class="font-display reveal" style="font-size:1.35rem;font-style:italic;color:var(--wine);animation-delay:.18s">
+                            Celebrating a Remarkable Milestone
+                        </p>
+
+                        <div style="margin:2rem auto 0;max-width:22rem;border-top:1px solid #b88a4770;border-bottom:1px solid #b88a4770;padding:1.2rem">
+
+                            <p class="font-display" style="font-size:1.15rem;margin:0;font-weight:500">
+                                October 11, 2026 (Sunday)
+                            </p>
+
+                            <p class="font-display" style="margin:.25rem 0 0;font-style:italic;color:var(--wine)">
+                                3:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div style="max-width:34rem;width:100%;margin:auto">
+
+                        <div class="photo-mat reveal" style="transform:rotate(1.25deg);animation-delay:.12s">
+
+                            <img
+                                style="aspect-ratio:4/5"
+                                src="Nanay Ligaya.png"
+                                alt="Portrait of Ligaya Angela Edora"
+                                loading="lazy"
+                            >
+
+                            <span class="photo-caption">
+                                Ligaya Angela Edora
+                            </span>
+
+                        </div>
+
+                        <p class="font-script" style="margin:-1.25rem .5rem 0 0;text-align:right;font-size:3.5rem;color:var(--rose)">
+                            with love
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- MILESTONE -->
+        <section class="milestone-section">
+
+            <div class="milestone-floral milestone-floral-left" aria-hidden="true">
+                <span class="leaf leaf-1"></span>
+                <span class="leaf leaf-2"></span>
+                <span class="leaf leaf-3"></span>
+                <span class="flower flower-1">✿</span>
+            </div>
+
+            <div class="milestone-floral milestone-floral-right" aria-hidden="true">
+                <span class="leaf leaf-4"></span>
+                <span class="leaf leaf-5"></span>
+                <span class="leaf leaf-6"></span>
+                <span class="flower flower-2">✿</span>
+            </div>
+
+            <div class="milestone-container">
+
+                <div class="milestone-visual">
+
+                    <div class="quote-card">
+
+                        <div class="quote-content">
+
+                            <div class="quote-text">
+                                Eight Decades of Grace &amp; Love
+                            </div>
+
+                            <div class="quote-divider">
+                                <span></span>
+                                <b>♥</b>
+                                <span></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="milestone-content">
+
+                    <div class="milestone-eyebrow">
+                        <span></span>
+                        A TREASURED MILESTONE
+                        <span></span>
+                    </div>
+
+                    <div class="milestone-title">
+
+                        <h2>
+                            Celebrating 80<br>
+                            Beautiful Years
+                        </h2>
+
+                    </div>
+
+                    <p class="milestone-description">
+                        With grateful hearts, family and friends are warmly invited
+                        to gather in celebration of Ligaya’s remarkable journey,
+                        cherished presence, and the beautiful memories still to be
+                        made together.
+                    </p>
+
+                    <div class="milestone-signature">
+                        A lifetime of beautiful memories
+
+                        <div class="signature-line">
+                            <span></span>
+                            <b>⌁</b>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- DETAILS -->
+        <section id="details" aria-labelledby="details-heading" style="position:relative;background:#f3e9dc8c">
+
+            <div class="section-wrap">
+
+                <div style="max-width:48rem;margin:auto;text-align:center">
+
+                    <p class="eyebrow">Mark the occasion</p>
+
+                    <div class="gold-rule" style="margin-left:auto;margin-right:auto"></div>
+
+                    <h2 id="details-heading" class="font-display" style="font-size:clamp(2.2rem,5vw,3rem);color:var(--wine)">
+                        SAVE THE DATE
+                    </h2>
+
+                </div>
+
+                <div class="detail-card" style="max-width:42rem;margin:2.5rem auto 0;padding:2rem">
+
+                    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;text-align:center">
+
+                        <div>
+                            <i data-lucide="calendar-days" style="color:var(--gold);margin-bottom:.75rem"></i>
+                            <p class="font-display">October 11, 2026 (Sunday)</p>
+                        </div>
+
+                        <div>
+                            <i data-lucide="clock-3" style="color:var(--gold);margin-bottom:.75rem"></i>
+                            <p class="font-display">3:00 PM</p>
+                        </div>
+
+                        <div>
+                            <i data-lucide="map-pin" style="color:var(--gold);margin-bottom:.75rem"></i>
+                            <p class="font-display">New Feng Huang Seafood Restaurant</p>
+                        </div>
+
+                    </div>
+
+                    <div class="photo-mat" style="margin:2rem auto 0;max-width:42rem">
+
+                        <img
+                            style="aspect-ratio:16/8"
+                            src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnD6Rb4ID7jbi01zdPUW1YCxeZa3Ky8wMGp0OPYzQ9q-7t0Yvcg-DfRnaKHtqf9hTrK7Lc0TRjJilaUK2NqQ5ttmNSKz71q7EQIiiXeGC9OgnjppeKClE_lIzuwCZkEaPUjPhRc=s1360-w1360-h1020-rw"
+                            alt="New Feng Huang Seafood Restaurant"
+                            loading="lazy"
+                        >
+
+                        <span class="photo-caption">
+                            Venue
+                        </span>
+
+                    </div>
+
+                    <div class="mobile-stack" style="display:flex;justify-content:center;gap:1rem;margin-top:2rem;flex-wrap:wrap">
+
+                        <a
+                            class="gold-button"
+                            href="https://maps.app.goo.gl/kF2rCrpGPh45Wfpo7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="map-pin"></i>
+                            VIEW LOCATION
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RSVP -->
+        <section id="rsvp" aria-labelledby="rsvp-heading" style="position:relative">
+
+            <div class="section-wrap">
+
+                <div class="rsvp-card" style="max-width:56rem;margin:auto;padding:2.5rem;text-align:center">
+
+                    <p class="eyebrow">Kindly respond</p>
+
+                    <div class="gold-rule" style="margin-left:auto;margin-right:auto"></div>
+
+                    <h2 id="rsvp-heading" class="font-display" style="font-size:clamp(2.2rem,5vw,3rem);color:var(--wine);margin:0">
+                        WILL YOU JOIN US?
+                    </h2>
+
+                    <p style="max-width:38rem;margin:1.5rem auto 0;font-size:1.15rem;line-height:1.8;color:#59433a">
+                        Your presence will make Ligaya’s 80th birthday celebration even more special.
+                    </p>
+
+                    <a
+                        class="gold-button"
+                        style="margin-top:2rem"
+                        href="https://forms.gle/Dk3tVcSToecHdiaPA"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i data-lucide="send"></i>
+                        RSVP NOW
+                    </a>
+
+                    <p style="margin-top:1rem;font-size:.9rem;color:#80665a">
+                        Please complete the Google Form to confirm your attendance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- PROGRAM -->
+        <section id="program" aria-labelledby="program-heading" style="position:relative">
+
+            <div class="section-wrap" style="max-width:56rem">
+
+                <div style="text-align:center">
+
+                    <p class="eyebrow">An evening to remember</p>
+
+                    <div class="gold-rule" style="margin-left:auto;margin-right:auto"></div>
+
+                    <h2 id="program-heading" class="font-display" style="font-size:clamp(2.2rem,5vw,3rem);color:var(--wine)">
+                        PROGRAM FLOW
+                    </h2>
+
+                </div>
+
+                <div class="timeline">
+
+                    <!-- ARRIVAL -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                3:00 – 3:10 PM
+                            </p>
+
+                            <p style="font-size:1.1rem">
+                                Guest Arrival
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <!-- PRAYER -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                              3:10 – 3:15 PM
+                            </p>
+
+                            <p style="font-size:1.1rem">
+                                Opening Prayer (Rhian Mishka Edora)
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <!-- WELCOME -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                3:15 – 3:25 PM
+                            </p>
+
+                            <p style="font-size:1.1rem">
+                                Welcome Remarks (Vangie Samonte)
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <!-- AVP -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                3:25 – 3:35 PM
+                            </p>
+
+                            <p style="font-size:1.1rem">
+                                80th Birthday AVP / Photo Memories
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <!-- ROSE -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                3:35 – 3:55 PM
+                            </p>
+
+                            <p style="font-size:1.1rem;color:var(--wine)">
+                                🌹 ROSE
+                            </p>
+
+                            <div class="program-participants">
+
+                                <p class="program-participants-title">
+                                    Participants
+                                </p>
+
+                                <ol class="program-names">
+                                   <li><span>1.</span> Joaquin</li>
+                                    <li><span>2.</span> Keian</li>
+                                    <li><span>2.</span> Mateo</li>
+                                    <li><span>4.</span> Nathan</li>
+                                    <li><span>5.</span> Kristopher</li>
+                                    <li><span>6.</span> Uncle Rudy</li>
+                                    <li><span>7.</span> Uncle Lando</li>
+                                    <li><span>8.</span> Uncle Danny</li>
+                                    <li><span>9.</span> Rafael</li>
+                                    <li><span>10.</span> Sally</li>
+                                    <li><span>11.</span> Rey</li>
+                                    <li><span>12.</span> Bert</li>
+                                    <li><span>13.</span> Buboy</li>
+                                </ol>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!-- BILLS -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                3:55 – 4:15 PM
+                            </p>
+
+                            <p style="font-size:1.1rem;color:#557a9f">
+                                💵 BILLS
+                            </p>
+
+                            <div class="program-participants">
+
+                                <p class="program-participants-title">
+                                    Participants
+                                </p>
+
+                                <ol class="program-names">
+                                    <li><span>1.</span> Shaneya</li>
+                                    <li><span>2.</span> Mon</li>
+                                    <li><span>3.</span> Rovic</li>
+                                    <li><span>4.</span> John</li>
+                                    <li><span>5.</span> Paula</li>
+                                    <li><span>6.</span> Sheena</li>
+                                    <li><span>7.</span> Barbz</li>
+                                    <li><span>8.</span> Bianca</li>
+                                </ol>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!-- CANDLES -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                4:15 – 4:35 PM
+                            </p>
+
+                            <p style="font-size:1.1rem;color:var(--wine)">
+                                🕯️ CANDLES / WISH
+                            </p>
+
+                            <div class="program-participants">
+
+                                <p class="program-participants-title">
+                                    Participants
+                                </p>
+
+                                <ol class="program-names">
+                                    <li><span>1.</span> Margaux &amp; Margarette</li>
+                                    <li><span>2.</span> Keighley</li>
+                                    <li><span>3.</span> Mariel</li>
+                                    <li><span>4.</span> Rhian</li>
+                                    <li><span>5.</span> Keisha</li>
+                                    <li><span>6.</span> Auntie Susan</li>
+                                    <li><span>7.</span> Auntie Lolit</li>
+                                    <li><span>8.</span> Auntie Linda</li>
+                                </ol>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!-- GIFT -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                4:35 – 4:55 PM
+                            </p>
+
+                            <p style="font-size:1.1rem;color:var(--wine)">
+                                🎁 GIFT OR TREASURE
+                            </p>
+
+                            <p style="font-size:.95rem;color:#80665a;margin:.25rem 0 0">
+                                Wish and Symbolize
+                            </p>
+
+                            <div class="program-participants">
+
+                                <p class="program-participants-title">
+                                    Participants
+                                </p>
+
+                                <ol class="program-names">
+                                    <li><span>1.</span> Ate Delia</li>
+                                    <li><span>2.</span> Ate Nida</li>
+                                    <li><span>3.</span> Manang Julie</li>
+                                    <li><span>4.</span> Joy</li>
+                                    <li><span>5.</span> Maritz</li>
+                                    <li><span>6.</span> Jen</li>
+                                    <li><span>7.</span> Loida</li>
+                                    <li><span>8.</span> Val</li>
+                                    <li><span>9.</span> Vangie</li>
+                                </ol>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!-- DINNER -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                4:55 – 5:25 PM
+                            </p>
+
+                            <p style="font-size:1.1rem">
+                                🍽️ Dinner
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <!-- CAKE -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                5:25 – 5:35 PM
+                            </p>
+
+                            <p style="font-size:1.1rem">
+                                🎂 Cake-Cutting &amp; Birthday Song
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <!-- MESSAGE VIDEO -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                5:35 – 5:45 PM
+                            </p>
+
+                            <p style="font-size:1.1rem;color:var(--wine)">
+                                🎥 MESSAGE VIDEO
+                            </p>
+
+                            <div class="program-participants">
+
+                                <p class="program-participants-title">
+                                    Messages from
+                                </p>
+
+                                <ol class="program-names">
+                                    <li><span>1.</span> Pao &amp; Family</li>
+                                    <li><span>2.</span> Raymond</li>
+                                    <li><span>3.</span> Roger</li>
+                                </ol>
+
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!-- PERFORMANCE -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                5:45 – 5:55 PM
+                            </p>
+
+                            <p style="font-size:1.1rem;color:var(--wine)">
+                                🎤 Sing or Dance Performance
+                            </p>
+
+                            <p style="font-size:.95rem;color:#80665a;margin:.25rem 0 0">
+                                Open to Guests
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <!-- CELEBRANT MESSAGE -->
+                    <article class="timeline-item">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                5:55 – 5:58 PM
+                            </p>
+
+                            <p style="font-size:1.1rem">
+                                ❤️ Message from the Celebrant
+                            </p>
+
+                        </div>
+                    </article>
+
+                    <!-- CLOSING -->
+                    <article class="timeline-item" style="padding-bottom:0">
+                        <div class="timeline-card">
+
+                            <p class="font-display" style="font-weight:600;color:#a06f34">
+                                5:58 – 6:00 PM
+                            </p>
+
+                            <p style="font-size:1.1rem">
+                                Closing &amp; Family Photo
+                            </p>
+
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DRESS CODE -->
+        <section id="dress-code" aria-labelledby="dress-heading" style="position:relative;background:#eadacd75">
+
+            <div class="section-wrap" style="text-align:center">
+
+                <p class="eyebrow">
+                    An elegant occasion
+                </p>
+
+                <div class="gold-rule" style="margin-left:auto;margin-right:auto"></div>
+
+                <h2 id="dress-heading" class="font-display" style="font-size:clamp(2.2rem,5vw,3rem);color:var(--wine)">
+                    DRESS CODE
+                </h2>
+
+                <p class="font-display" style="max-width:42rem;margin:1.75rem auto 0;border-top:1px solid #b88a4770;border-bottom:1px solid #b88a4770;padding:1.5rem;font-size:1.5rem;font-style:italic;color:var(--rose)">
+                    Semi-Formal
+                </p>
+
+                <!-- DRESS COLOR -->
+                <div style="margin:1.5rem auto 0;text-align:center">
+
+                    <p style="margin:0;color:#80665a;font-weight:600;letter-spacing:.08em;text-transform:uppercase">
+                        Dress Color:
+                        <span style="color:var(--wine)">
+                            Champagne
+                        </span>
+                    </p>
+
+                    <div class="champagne-colors">
+
+                        <span
+                            class="champagne-color champagne-light"
+                            title="Light Champagne"
+                            aria-label="Light Champagne"
+                        ></span>
+
+                        <span
+                            class="champagne-color champagne-classic"
+                            title="Classic Champagne"
+                            aria-label="Classic Champagne"
+                        ></span>
+
+                        <span
+                            class="champagne-color champagne-deep"
+                            title="Deep Champagne"
+                            aria-label="Deep Champagne"
+                        ></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FINAL -->
+        <section id="final" aria-labelledby="final-heading" style="position:relative;overflow:hidden;background:#422e2a;color:#fffaf1">
+
+            <div class="section-wrap">
+
+                <div style="text-align:center">
+
+                    <p class="eyebrow" style="color:#eacb9c">
+                        With anticipation
+                    </p>
+
+                    <div class="gold-rule" style="margin-left:auto;margin-right:auto"></div>
+
+                    <h2 id="final-heading" class="font-display" style="font-size:clamp(3rem,6vw,4.2rem);color:#fffaf1;margin:.5rem 0">
+                        SEE YOU THERE!
+                    </h2>
+
+                    <p class="font-display" style="font-size:1.5rem;font-style:italic;color:#eacb9c">
+                        LIGAYA @ 80
+                    </p>
+
+                    <p class="font-display" style="margin-top:1.5rem">
+                        Sunday, October 11, 2026 — 3:00 PM
+                    </p>
+
+                    <p style="max-width:38rem;margin:1.75rem auto 0;font-size:1.1rem;line-height:1.8;color:#f8ece1">
+                        Thank you for being part of this beautiful milestone.
+                    </p>
+
+                    <div class="mobile-stack" style="display:flex;justify-content:center;gap:1rem;margin-top:2rem;flex-wrap:wrap">
+
+                        <a
+                            class="gold-button"
+                            href="https://forms.gle/Dk3tVcSToecHdiaPA"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="send"></i>
+                            RSVP NOW
+                        </a>
+
+                        <a
+                            class="outline-button"
+                            style="background:transparent;color:#fffaf1;border-color:#d9ba7b"
+                            href="https://maps.app.goo.gl/kF2rCrpGPh45Wfpo7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i data-lucide="map-pin"></i>
+                            VIEW LOCATION
+                        </a>
+
+                    </div>
+
+                    <p class="font-script" style="margin-top:2rem;font-size:3.5rem;color:#eacb9c">
+                        with love
+                    </p>
+
+                </div>
+
+                <svg class="footer-florals" viewBox="0 0 500 100" fill="none" aria-hidden="true">
+                    <path d="M5 88c76-5 89-58 151-52 48 5 50 43 94 43 51 0 65-65 132-58 51 5 59 49 113 49" stroke="currentColor" stroke-width="1.2"/>
+                    <path d="M93 47c-7-24 10-35 26-34-1 19-9 28-26 34Zm4 0c-18-4-23-19-15-29 14 8 19 17 15 29ZM263 51c-7-24 10-35 26-34-1 19-9 28-26 34Zm4 0c-18-4-23-19-15-29 14 8 19 17 15 29ZM410 42c-7-24 10-35 26-34-1 19-9 28-26 34Zm4 0c-18-4-23-19-15-29 14 8 19 17 15 29Z" stroke="currentColor" stroke-width="1.2"/>
+                </svg>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+    });
+</script>
+
+</body>
+</html>
